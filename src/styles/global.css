@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "pplxSans";
+  src: url("/assets/fonts/PPLX-Sans-Beta-v2-VF.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "pplxSerif";
+  src: url("/assets/fonts/PPLX-Serif-Beta-v2-VF.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "pplxMono";
+  src: url("/assets/fonts/PPLX-Mono-Beta-v0-VF.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FKGrotesk";
+  src: url("/assets/fonts/FKGroteskNeue.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  font-family: "pplxSans", "FKGrotesk", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --paper: #faf8f5;
+  --raised: #fdfbfa;
+  --ink: #271a00;
+  --button: #27251e;
+  --muted: #716d65;
+  --line: rgba(39, 26, 0, 0.15);
+  --cta-dark: #23291b;
+  --page-width: 1728px;
+  --container-max: 1360px;
+  --nav-height: 64px;
+  --fluid: max(0rem, calc(100vw - 90rem));
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.72, 0, 0.36, 1);
+  --motion-fast: 240ms;
+  --motion-medium: 600ms;
+  --motion-slow: 1200ms;
+  --font-sans: "pplxSans", "FKGrotesk", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: "pplxSerif", Georgia, "Songti SC", "STSong", serif;
+  --font-mono: "pplxMono", "SFMono-Regular", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--paper);
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+#root {
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button {
+  outline-offset: 4px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #20808d;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+::selection {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+@media (min-width: 640px) {
+  html,
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

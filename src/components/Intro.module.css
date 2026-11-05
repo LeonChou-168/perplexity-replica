@@ -1,0 +1,236 @@
+.intro {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  padding: 20vh 40px;
+  color: var(--ink);
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.stampLayer {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stamp {
+  position: absolute;
+  top: var(--stamp-top);
+  left: var(--stamp-left);
+  padding: 12px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(39, 26, 0, 0.1);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(var(--stamp-rotate));
+  transform-origin: center;
+  animation: stampLifecycle 2600ms cubic-bezier(0.12, 1, 0.72, 1) forwards;
+  backdrop-filter: blur(6px);
+}
+
+.manifesto {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.manifesto p {
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto 24px;
+}
+
+.manifesto p:last-child {
+  margin-bottom: 0;
+}
+
+.wordmarkWrap {
+  display: inline-flex;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.productLabel {
+  --eye-x: 0px;
+  --eye-y: 0px;
+  display: inline-flex;
+  position: relative;
+  gap: 8px;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.productLabel::after {
+  position: absolute;
+  top: -15%;
+  left: -60%;
+  width: 45%;
+  height: 130%;
+  content: "";
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.72) 50%, transparent 100%);
+  pointer-events: none;
+  transform: skewX(-10deg);
+}
+
+.productLabelActive::after {
+  animation: wordmarkShimmer 550ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.computerIcon {
+  width: 29px;
+  height: 24px;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: translateY(1.6px);
+}
+
+.productLabelActive .computerIcon {
+  animation: computerShake 320ms ease-in-out;
+}
+
+.eye {
+  transform: translate(var(--eye-x), var(--eye-y));
+  transition: transform 90ms ease-out;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 12;
+  top: -8px;
+  left: 50%;
+  padding: 4px 8px;
+  color: var(--paper);
+  background: var(--button);
+  border: 1px solid var(--button);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+  animation: tooltipIn 120ms ease both;
+}
+
+.contrast strong {
+  display: block;
+  font-weight: 500;
+}
+
+@keyframes computerShake {
+  0%, 100% { transform: translateY(-3.2px) translateX(0); }
+  20% { transform: translateY(-3.2px) translateX(-3px); }
+  40% { transform: translateY(-3.2px) translateX(3px); }
+  60% { transform: translateY(-3.2px) translateX(-2px); }
+  80% { transform: translateY(-3.2px) translateX(2px); }
+}
+
+@keyframes wordmarkShimmer {
+  to { left: 130%; }
+}
+
+@keyframes tooltipIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes stampLifecycle {
+  0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--stamp-rotate)) scale(1.05); }
+  12%, 72% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--stamp-rotate)) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--stamp-rotate)) scale(1); }
+}
+
+@media (max-width: 960px) {
+  .intro {
+    display: block;
+    height: auto;
+    padding: 20vh 40px;
+  }
+
+  .manifesto {
+    max-width: 512px;
+    font-size: 24px;
+  }
+
+  .manifesto p {
+    width: 432px;
+  }
+
+  .computerIcon {
+    width: 21px;
+    height: 18px;
+    transform: translateY(0.05em);
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: 240px 16px 160px;
+  }
+
+  .manifesto {
+    max-width: none;
+  }
+
+  .contrast strong {
+    display: inline;
+  }
+
+  .contrast strong::before {
+    content: " ";
+  }
+
+  .stamp {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    overflow: visible;
+  }
+
+  .productLabel::after,
+  .productLabelActive::after,
+  .productLabelActive .computerIcon,
+  .stamp,
+  .tooltip {
+    animation: none;
+  }
+
+  .eye {
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 480px) {
+  .intro {
+    padding: 240px 16px 160px;
+  }
+}

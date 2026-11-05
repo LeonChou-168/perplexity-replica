@@ -1,0 +1,21 @@
+{
+  "id": "computer-2026-07-23T23-09-22+08-00",
+  "sourceUrl": "https://www.perplexity.ai/products/computer",
+  "capturedAt": "2026-07-23T23:09:22+08:00",
+  "status": "partial",
+  "note": "The CSS, public media and measured layout were captured. A fresh 2026-07-26 HTML/HAR/JavaScript capture was blocked because the official route did not load.",
+  "locales": ["en", "zh-CN"],
+  "viewports": [
+    { "id": "wide", "width": 1440, "height": 900 },
+    { "id": "desktop", "width": 1280, "height": 720 },
+    { "id": "tablet", "width": 768, "height": 1024 },
+    { "id": "mobile", "width": 390, "height": 844 }
+  ],
+  "files": [
+    {
+      "path": "style-ChJ3YH0S.css",
+      "bytes": 825762,
+      "sha256": "0853fc298f6644eae728e562fe409ad1a2e4f12f0575c5090fd391e6748bbcf6"
+    }
+  ]
+}

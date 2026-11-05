@@ -1,0 +1,236 @@
+.root {
+  position: relative;
+  width: auto;
+  max-width: min(1040px, 100%);
+  height: min(100%, 585px);
+  max-height: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  color: #fff;
+  background: #151412;
+  border-radius: 12px;
+  pointer-events: auto;
+}
+
+.poster,
+.video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.poster {
+  z-index: 0;
+}
+
+.video {
+  z-index: 1;
+  opacity: 0;
+}
+
+.root[data-ready="true"] .video {
+  opacity: 1;
+}
+
+.posterOnly {
+  width: min(1040px, 100%);
+  height: auto;
+}
+
+.posterOnly .poster {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.controls {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 32px 12px 10px;
+  opacity: 0;
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.root:hover .controls,
+.root:focus-within .controls,
+.lightboxPlayer:hover .controls,
+.lightboxPlayer:focus-within .controls {
+  opacity: 1;
+}
+
+.controlButton,
+.scrubber {
+  pointer-events: auto;
+}
+
+.controlButton {
+  display: inline-flex;
+  flex: 0 0 32px;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.controlButton:hover,
+.controlButton:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  outline: 1px solid rgba(255, 255, 255, 0.75);
+  outline-offset: 1px;
+}
+
+.controlButton:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.scrubber {
+  height: 3px;
+  min-width: 0;
+  flex: 1;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.scrubber:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.scrubber:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.scrubber::-webkit-slider-thumb {
+  width: 11px;
+  height: 11px;
+  appearance: none;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scrubber::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.88);
+  border: 0;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.lightboxContent {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 160vh);
+  aspect-ratio: 16 / 9;
+}
+
+.lightboxPlayer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #151412;
+  border-radius: 12px;
+}
+
+.lightboxPoster,
+.lightboxVideo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lightboxPoster {
+  z-index: 0;
+}
+
+.lightboxVideo {
+  z-index: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.72);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus-visible {
+  color: #fff;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .root {
+    width: 100%;
+    height: auto;
+  }
+
+  .lightboxContent {
+    width: calc(100vw - 32px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .controls,
+  .controlButton {
+    transition: none;
+  }
+}

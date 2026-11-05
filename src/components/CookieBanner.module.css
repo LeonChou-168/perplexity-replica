@@ -1,0 +1,70 @@
+.banner {
+  position: fixed;
+  z-index: 120;
+  right: 8px;
+  bottom: 8px;
+  width: min(448px, calc(100vw - 16px));
+  padding: 18px 16px 16px;
+  color: #37342e;
+  background: rgba(253, 251, 250, 0.96);
+  border: 1px solid rgba(39, 26, 0, 0.12);
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(39, 26, 0, 0.06);
+  backdrop-filter: blur(14px);
+}
+
+.banner h2 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 0 0 5px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.banner p {
+  margin: 0;
+  color: #6d6962;
+  font-size: 14px;
+  line-height: 1.38;
+}
+
+.actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.actions button {
+  min-height: 34px;
+  padding: 0 13px;
+  color: #37342e;
+  background: #efede8;
+  border: 0;
+  border-radius: 5px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 560;
+  cursor: pointer;
+}
+
+.actions .accept {
+  color: var(--paper);
+  background: var(--button);
+}
+
+@media (max-width: 480px) {
+  .banner {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    width: auto;
+    padding: 17px 16px 15px;
+  }
+
+  .banner p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+}

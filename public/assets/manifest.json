@@ -1,0 +1,883 @@
+{
+  "version": 2,
+  "snapshotId": "computer-2026-07-23T23-09-22+08-00",
+  "sourceBundle": "style-ChJ3YH0S.css",
+  "sourcePage": "https://www.perplexity.ai/products/computer",
+  "fetchedAt": "2026-07-23T23:09:22+08:00",
+  "assets": [
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/v1771728928/pplx-web/Computer/videos/computer-hero-bg-2.webm",
+      "localPath": "/assets/video/computer-hero-bg-2.webm",
+      "kind": "video",
+      "mimeType": "video/webm",
+      "bytes": 1339766,
+      "sha256": "66ed07638441d4bc56373b075741588eab3e8326051f6bb545367e8d60ce8ad2",
+      "durationSeconds": 10.042,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/v1773215515/pplx-web/Computer/videos/computer-unifies-bg.webm",
+      "localPath": "/assets/video/computer-unifies-bg.webm",
+      "kind": "video",
+      "mimeType": "video/webm",
+      "bytes": 1817096,
+      "sha256": "03673940c2d49604cfbe183263232371eef1dfcfda1c9e39c253df15a8eeaec3",
+      "durationSeconds": 8.042,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/pplx-web/Computer/videos/step-01.webm",
+      "localPath": "/assets/video/step-01.webm",
+      "kind": "video",
+      "mimeType": "video/webm",
+      "bytes": 460659,
+      "sha256": "e0d482b5a2163a51e377dda864f06f9b1d92b180460e240bbeda1d944ab92ed7",
+      "durationSeconds": 15.917,
+      "dimensions": {
+        "width": 1728,
+        "height": 1080
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/pplx-web/Computer/videos/step-02.webm",
+      "localPath": "/assets/video/step-02.webm",
+      "kind": "video",
+      "mimeType": "video/webm",
+      "bytes": 871268,
+      "sha256": "0c7fcabaee9a31da74e0bcb5e41c277b3721863dcdbbc833cd653c1270b6e48f",
+      "durationSeconds": 24.284,
+      "dimensions": {
+        "width": 1728,
+        "height": 1080
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/v1772015102/pplx-web/Computer/videos/step-03.webm",
+      "localPath": "/assets/video/step-03.webm",
+      "kind": "video",
+      "mimeType": "video/webm",
+      "bytes": 855375,
+      "sha256": "7ca448df736cd0a38cca9c10a11a15ca9908101353853653e6f75491d7206a3b",
+      "durationSeconds": 18.2,
+      "dimensions": {
+        "width": 1728,
+        "height": 1080
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1600/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+      "localPath": "/assets/images/computer-hero-bg-fallback-2.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 187206,
+      "sha256": "386e7ab4f8840b8d0d4f9c6e181624daf0edace218f4446d63b9e11fb10725d1",
+      "dimensions": {
+        "width": 1600,
+        "height": 893
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-01.webp",
+      "localPath": "/assets/images/step-bg-01.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 239464,
+      "sha256": "1a718b75121638e56ff62603042fa99b401f2337e3acd7c4c0a7b42cc3db94ab",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-02.webp",
+      "localPath": "/assets/images/step-bg-02.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 249418,
+      "sha256": "4e9af9fcc7ad021b45ba00909867beab86d5d2443a1cb7f6bb69de8bd4c13c67",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-03.webp",
+      "localPath": "/assets/images/step-bg-03.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 269148,
+      "sha256": "4a5c4d5de0b02eab89da95de2b11b370da1cef8986293dee229f7858e17715fa",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1600/pplx-web/Computer/images/step-01.webp",
+      "localPath": "/assets/images/step-01.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 43174,
+      "sha256": "2ccb56526dbc19c4ea5a6acd8d037a202e1f34426471e1f1be4b72c01f51d540",
+      "dimensions": {
+        "width": 1600,
+        "height": 1000
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1600/pplx-web/Computer/images/step-02.webp",
+      "localPath": "/assets/images/step-02.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 68382,
+      "sha256": "ec9fb8dd520045f7f30c61e4e72ab73798c6f06d094e3bd744897b26eb9e5e4b",
+      "dimensions": {
+        "width": 1600,
+        "height": 1000
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1600/v1772015069/pplx-web/Computer/images/step-03.webp",
+      "localPath": "/assets/images/step-03.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 62206,
+      "sha256": "f4cc397e022de10fd2a6b0d0d83a1871eca2779cf0d4e0b98e94f2ed501820a1",
+      "dimensions": {
+        "width": 1600,
+        "height": 1000
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1600/pplx-web/Computer/images/feature-task-monitoring.webp",
+      "localPath": "/assets/images/feature-task-monitoring.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 114522,
+      "sha256": "2ef9c14ee211f2d4dac0469dea26dd282a3b8ac4bcfcac6197804a834c340121",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/feature-research-browse.webp",
+      "localPath": "/assets/images/feature-research-browse.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 83918,
+      "sha256": "77ea3a482ff0f5a62d3da37e92e1a2e73e372445d9fe87770fbd08ac674d148a",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/feature-connect-tools.webp",
+      "localPath": "/assets/images/feature-connect-tools.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 151672,
+      "sha256": "b88df525549d462f71d166fa36285e6c542715da971ec5aa6c2f71ada92364e3",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/feature-create-build.webp",
+      "localPath": "/assets/images/feature-create-build.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 96044,
+      "sha256": "80f34627f4fe56ec3c85163ccda27e24a9c7e8490bcdf4afb4867d74ee419af6",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/footer-background.webp",
+      "localPath": "/assets/images/footer-background.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 123590,
+      "sha256": "b323b68b877d67da29a60c1b8d538b24e26d53774d45d59095be71a9511575fe",
+      "dimensions": {
+        "width": 1600,
+        "height": 897
+      }
+    },
+    {
+      "sourceUrl": "https://frontend-cdn.perplexity.ai/_agi_assets/fonts/PPLX-Sans-Beta-v2-VF.woff2",
+      "localPath": "/assets/fonts/PPLX-Sans-Beta-v2-VF.woff2",
+      "kind": "font",
+      "mimeType": "font/woff2",
+      "bytes": 162632,
+      "sha256": "391beba51b4b22b886d2528b44af07b9f0bf68b92f9cf1c36b30286d9a457289"
+    },
+    {
+      "sourceUrl": "https://frontend-cdn.perplexity.ai/_agi_assets/fonts/FKGroteskNeue.woff2",
+      "localPath": "/assets/fonts/FKGroteskNeue.woff2",
+      "kind": "font",
+      "mimeType": "font/woff2",
+      "bytes": 113940,
+      "sha256": "2eeeb4b1fe0ceb5311aefcf033214ba304b9b051454b819a979a9fb5babef56a"
+    },
+    {
+      "sourceUrl": "https://frontend-cdn.perplexity.ai/_agi_assets/fonts/PPLX-Serif-Beta-v2-VF.woff2",
+      "localPath": "/assets/fonts/PPLX-Serif-Beta-v2-VF.woff2",
+      "kind": "font",
+      "mimeType": "font/woff2",
+      "bytes": 151836,
+      "sha256": "2e13725006429797f49d82113fc625a253fa88d1d8362b43025a8bd7eaf77d71"
+    },
+    {
+      "sourceUrl": "https://frontend-cdn.perplexity.ai/_agi_assets/fonts/PPLX-Mono-Beta-v0-VF.woff2",
+      "localPath": "/assets/fonts/PPLX-Mono-Beta-v0-VF.woff2",
+      "kind": "font",
+      "mimeType": "font/woff2",
+      "bytes": 59464,
+      "sha256": "bf636c5ed5927ff2506143200fb15e5b29990ec4534729c2f2b28244bd03cdba"
+    },
+    {
+      "sourceUrl": "https://www.perplexity.ai/favicon.svg",
+      "localPath": "/assets/icons/perplexity.svg",
+      "kind": "icon",
+      "mimeType": "image/svg+xml",
+      "bytes": 2438,
+      "sha256": "00180a688c194d684a69b247769cdf24a7720712256dbe0f334f97e8a15821e4",
+      "dimensions": {
+        "width": 270,
+        "height": 270
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-marketing-static.perplexity.ai/assets/apple-app-store-BC0fmJ99.svg",
+      "localPath": "/assets/icons/apple-app-store.svg",
+      "kind": "badge",
+      "mimeType": "image/svg+xml",
+      "bytes": 5359,
+      "sha256": "6e02bfe27ae2beda09597a70696c6528643da957987cb6585171b46c6bad72f9",
+      "dimensions": {
+        "width": 150,
+        "height": 50
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-marketing-static.perplexity.ai/assets/google-app-store-_ij3hvf8.svg",
+      "localPath": "/assets/icons/google-app-store.svg",
+      "kind": "badge",
+      "mimeType": "image/svg+xml",
+      "bytes": 4493,
+      "sha256": "d4a2e2defc1d12ebd415f3260a2780f014d9362318c047b046876bdcd914b70e",
+      "dimensions": {
+        "width": 149,
+        "height": 50
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w600/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+      "localPath": "/assets/images/responsive/computer-hero-bg-fallback-2-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 32316,
+      "sha256": "a3d0c8ca1cebc1e108adaa0e333845ce7dc28ac69ac83ed058c4d9861156459d",
+      "dimensions": {
+        "width": 600,
+        "height": 335
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w900/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+      "localPath": "/assets/images/responsive/computer-hero-bg-fallback-2-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 71872,
+      "sha256": "0034242e86e5b75c4cc38d1301b3392990b0d2c2acce792996266350831dc48f",
+      "dimensions": {
+        "width": 900,
+        "height": 502
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1200/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+      "localPath": "/assets/images/responsive/computer-hero-bg-fallback-2-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 125760,
+      "sha256": "1bea85ba0d7ef93d0cb5190b6f74ca7f13de9af96a0124127761940f0273aaae",
+      "dimensions": {
+        "width": 1200,
+        "height": 670
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w2400/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+      "localPath": "/assets/images/responsive/computer-hero-bg-fallback-2-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 298662,
+      "sha256": "9f6510039191ac3f1f1eb5812e17d4cd739d5f2d31f63d1cd14df3a16dcc25e4",
+      "dimensions": {
+        "width": 2400,
+        "height": 1340
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/footer-background.webp",
+      "localPath": "/assets/images/responsive/footer-background-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 18454,
+      "sha256": "b29ab1cf75c055c1aa1a06bf3c6a7c2a76c0d0777163cb7de2670b857e520fa7",
+      "dimensions": {
+        "width": 600,
+        "height": 336
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/footer-background.webp",
+      "localPath": "/assets/images/responsive/footer-background-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 35968,
+      "sha256": "b84b53a107c5923faed6ee1b02a148d722038992d48eff98f3081515f9312e79",
+      "dimensions": {
+        "width": 900,
+        "height": 504
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/footer-background.webp",
+      "localPath": "/assets/images/responsive/footer-background-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 73932,
+      "sha256": "d0b9bf9e15b1e5ebdbbbd957d287e0a229295cc91ecb6de74f5804ea7d0fec9e",
+      "dimensions": {
+        "width": 1200,
+        "height": 672
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/footer-background.webp",
+      "localPath": "/assets/images/responsive/footer-background-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 282630,
+      "sha256": "20601b7957483de22832437a6db0dd79d5ad02103da3f895abbe13173ec0089b",
+      "dimensions": {
+        "width": 2400,
+        "height": 1345
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/step-bg-01.webp",
+      "localPath": "/assets/images/responsive/step-bg-01-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 48118,
+      "sha256": "2b76db718d791b6090e537f98fef27b943b1aa2acf66b309d66065d64d2138cc",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/step-bg-01.webp",
+      "localPath": "/assets/images/responsive/step-bg-01-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 88476,
+      "sha256": "735a6b2d81dcc2cc03d58985a050fcac1dfb8a40b7cfbfb084c733bbe15f098f",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/step-bg-01.webp",
+      "localPath": "/assets/images/responsive/step-bg-01-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 147074,
+      "sha256": "cb2e9302fd048bc05aa40ccda2b0994748b124071b7277b14300a1412df76b96",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/step-bg-01.webp",
+      "localPath": "/assets/images/responsive/step-bg-01-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 473590,
+      "sha256": "9e7531dfa38d9f24a038ca6c6faf689a29b2b8d4c9173633c560882638944453",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/step-bg-02.webp",
+      "localPath": "/assets/images/responsive/step-bg-02-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 52940,
+      "sha256": "9a7a3321135c191f2a05e31953fd37981fbe6d7033de0c428d109d1800bd8bbb",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/step-bg-02.webp",
+      "localPath": "/assets/images/responsive/step-bg-02-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 94804,
+      "sha256": "8ebe88d6578297445ecd5e156710149a3462d6c6ff8eaa1836ad249801091792",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/step-bg-02.webp",
+      "localPath": "/assets/images/responsive/step-bg-02-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 170026,
+      "sha256": "d3596a26a54aabbf0276582839760c704c20eae3b60a8103572852bf2f4b7035",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/step-bg-02.webp",
+      "localPath": "/assets/images/responsive/step-bg-02-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 407814,
+      "sha256": "3843ba1a82a6841535fc97fb42a142ef72b4562266ed0e6b36ad05337c4a4ace",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/step-bg-03.webp",
+      "localPath": "/assets/images/responsive/step-bg-03-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 48658,
+      "sha256": "f64671941c81a0791dfb6a70e55ee25cbc86bb63dbf7d453e53accaf8a049bd9",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/step-bg-03.webp",
+      "localPath": "/assets/images/responsive/step-bg-03-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 96650,
+      "sha256": "76a51c1e94a280bff4b91031c69296cc0a1b6fd525ed02347cef1f136cda70a5",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/step-bg-03.webp",
+      "localPath": "/assets/images/responsive/step-bg-03-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 149840,
+      "sha256": "94f1f53a7cdb10072049bacbbd799d51b61dd35443cabf33375995f4836d1965",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/step-bg-03.webp",
+      "localPath": "/assets/images/responsive/step-bg-03-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 453922,
+      "sha256": "a1cabc870f4dad0d1d7ed3d41047a778f1aff6ef2571dd6b12c16d98e0bb2a49",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w600/pplx-web/Computer/images/step-01.webp",
+      "localPath": "/assets/images/responsive/step-01-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 18768,
+      "sha256": "9d253240304eb5bd603a6beb882d63e844ed64187203867447e968bc56f19751",
+      "dimensions": {
+        "width": 600,
+        "height": 375
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w900/pplx-web/Computer/images/step-01.webp",
+      "localPath": "/assets/images/responsive/step-01-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 21432,
+      "sha256": "133b52dbd876a26b0e17338d043536772d8bfe6f81931de588a989d28f05cb14",
+      "dimensions": {
+        "width": 900,
+        "height": 563
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1200/pplx-web/Computer/images/step-01.webp",
+      "localPath": "/assets/images/responsive/step-01-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 26792,
+      "sha256": "980559638311a7c764b3f93ea4baa7f7b9907c017d9e2900163d0c7de9db33bf",
+      "dimensions": {
+        "width": 1200,
+        "height": 750
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w2400/pplx-web/Computer/images/step-01.webp",
+      "localPath": "/assets/images/responsive/step-01-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 54382,
+      "sha256": "b9d91f57f8ed7e9a481c905600aea92418b27301ff435663b6647314423bb119",
+      "dimensions": {
+        "width": 2400,
+        "height": 1500
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w600/pplx-web/Computer/images/step-02.webp",
+      "localPath": "/assets/images/responsive/step-02-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 27710,
+      "sha256": "23a9a616a3e025c1e97ddaca4fededb53bf83f2f31737f33c7b38d412f931997",
+      "dimensions": {
+        "width": 600,
+        "height": 375
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w900/pplx-web/Computer/images/step-02.webp",
+      "localPath": "/assets/images/responsive/step-02-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 30722,
+      "sha256": "65b3524a862c1ef44f29c7317f0e63949592246392216c0e225b6f58844b4608",
+      "dimensions": {
+        "width": 900,
+        "height": 563
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1200/pplx-web/Computer/images/step-02.webp",
+      "localPath": "/assets/images/responsive/step-02-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 46260,
+      "sha256": "4b780608309bc9929671915f735fe53a2ff64ec93c41a0cd8c93116191062ae1",
+      "dimensions": {
+        "width": 1200,
+        "height": 750
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w2400/pplx-web/Computer/images/step-02.webp",
+      "localPath": "/assets/images/responsive/step-02-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 77810,
+      "sha256": "2c40d5a9ebee518809862290a8a655964dfd00dc20daf7787efae6d74d70a0cc",
+      "dimensions": {
+        "width": 2400,
+        "height": 1500
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w600/v1772015069/pplx-web/Computer/images/step-03.webp",
+      "localPath": "/assets/images/responsive/step-03-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 18394,
+      "sha256": "8250d036086be1462024b8b30b2a7a6c7043e989f37a9f435f498ce6a8f511e2",
+      "dimensions": {
+        "width": 600,
+        "height": 375
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w900/v1772015069/pplx-web/Computer/images/step-03.webp",
+      "localPath": "/assets/images/responsive/step-03-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 29520,
+      "sha256": "2b93a78e8f25e6c068248d58c47dcb53f3f96f008655369601b3d8bd7e3e418b",
+      "dimensions": {
+        "width": 900,
+        "height": 563
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1200/v1772015069/pplx-web/Computer/images/step-03.webp",
+      "localPath": "/assets/images/responsive/step-03-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 42378,
+      "sha256": "04f415aac95e56b68b19dd81de1a13c5f37fea3c3bb41de254f0b311546435bf",
+      "dimensions": {
+        "width": 1200,
+        "height": 750
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w2400/v1772015069/pplx-web/Computer/images/step-03.webp",
+      "localPath": "/assets/images/responsive/step-03-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 84992,
+      "sha256": "45a66e632a608aef69d89060847c82fb0155d3e185b6ea9c4c440928c8af08a4",
+      "dimensions": {
+        "width": 2400,
+        "height": 1500
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w600/pplx-web/Computer/images/feature-task-monitoring.webp",
+      "localPath": "/assets/images/responsive/feature-task-monitoring-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 19028,
+      "sha256": "2a723f50cce49ab65b2fd329cf4b5e8150c4c35589e08c04925688647ce8c9f1",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w900/pplx-web/Computer/images/feature-task-monitoring.webp",
+      "localPath": "/assets/images/responsive/feature-task-monitoring-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 38076,
+      "sha256": "a996276cd4931aa812032cc6db65442191c4672288eb536e1e3db9c1f2b23075",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w1200/pplx-web/Computer/images/feature-task-monitoring.webp",
+      "localPath": "/assets/images/responsive/feature-task-monitoring-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 65212,
+      "sha256": "c2f73a4a4b0b36d589b88b6bfc2720d4e4cb72032bfdbdb970c2146fff11cbf3",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/image/upload/t_w2400/pplx-web/Computer/images/feature-task-monitoring.webp",
+      "localPath": "/assets/images/responsive/feature-task-monitoring-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 170682,
+      "sha256": "117b35be136ae330a94a1bd9da6dd5f251584e4a468a39ad8a4f2c109e814c2b",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/feature-research-browse.webp",
+      "localPath": "/assets/images/responsive/feature-research-browse-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 15404,
+      "sha256": "6f8b324a4fbcc7713789494f553501efabb7b9056efb209dc68fd9b7ba3c9f3b",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/feature-research-browse.webp",
+      "localPath": "/assets/images/responsive/feature-research-browse-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 31386,
+      "sha256": "208a4a357b767d6672e964776ce70137afaeee01af498cfaa595e656d25e232b",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/feature-research-browse.webp",
+      "localPath": "/assets/images/responsive/feature-research-browse-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 52242,
+      "sha256": "3540ccb7ca4b706644c2d7884e3221ae8d3e37000ce6d33ddcc993e21e6fd715",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/feature-research-browse.webp",
+      "localPath": "/assets/images/responsive/feature-research-browse-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 129388,
+      "sha256": "f80a272fb921a4aa2aa6ec053efdf8fd92613be7c4c569eec83ac7d1c95a0a05",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/feature-connect-tools.webp",
+      "localPath": "/assets/images/responsive/feature-connect-tools-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 17494,
+      "sha256": "61c2296d6a846a0d352671aabf29c4a35dfb3b9245e0b72b6690f1386ab68f3f",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/feature-connect-tools.webp",
+      "localPath": "/assets/images/responsive/feature-connect-tools-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 37900,
+      "sha256": "ab65b304721c1b508ebad9372c0403db0752f35d5e28c47c15349bfacd0bbae4",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/feature-connect-tools.webp",
+      "localPath": "/assets/images/responsive/feature-connect-tools-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 73320,
+      "sha256": "79722f7fd877fa518927e8b0f94151e8e8aa6d1a9709e38b4215c07d621b7036",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/feature-connect-tools.webp",
+      "localPath": "/assets/images/responsive/feature-connect-tools-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 239670,
+      "sha256": "0e9fdd95da4b5c8923d6ad236497ab1cc98b11a27991b0816cd4d915b6e3e8bb",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w600/pplx-web/Computer/images/feature-create-build.webp",
+      "localPath": "/assets/images/responsive/feature-create-build-w600.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 18798,
+      "sha256": "b5f1cce4a300efa7417e28acb902ea1935b48d6851f60883869407c2694bc8a5",
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w900/pplx-web/Computer/images/feature-create-build.webp",
+      "localPath": "/assets/images/responsive/feature-create-build-w900.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 35504,
+      "sha256": "e60359d05de19efb6cef78a2b19b93490ab1a2b0782b685f17ef11399302d983",
+      "dimensions": {
+        "width": 900,
+        "height": 506
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w1200/pplx-web/Computer/images/feature-create-build.webp",
+      "localPath": "/assets/images/responsive/feature-create-build-w1200.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 54478,
+      "sha256": "a9bca11b330ad6cdbfa51e3be83e4a632fd2b86963eb32fd0a975e94ec1cdfe1",
+      "dimensions": {
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "sourceUrl": "https://res.cloudinary.com/pplx/image/upload/t_w2400/pplx-web/Computer/images/feature-create-build.webp",
+      "localPath": "/assets/images/responsive/feature-create-build-w2400.webp",
+      "kind": "image",
+      "mimeType": "image/webp",
+      "bytes": 141922,
+      "sha256": "5fa0295945eacb737a1449c1e72765c7e06b42cbd3fe7ca0c3f0ff09238c21ee",
+      "dimensions": {
+        "width": 2400,
+        "height": 1350
+      }
+    },
+    {
+      "sourceUrl": "https://pplx-res.cloudinary.com/video/upload/v1771456666/pplx-web/Computer/audio/pplx-computer.mp3",
+      "localPath": "/assets/audio/pplx-computer.mp3",
+      "kind": "audio",
+      "mimeType": "audio/mpeg",
+      "bytes": 1721595,
+      "sha256": "3df29c4ea40d8dfcb959ef6b5cf20986bda629da9bdfa2891bd2201eca793ad9",
+      "durationSeconds": 143.124917
+    },
+    {
+      "sourceUrl": "https://www.perplexity.ai/products/computer#inline-footer-wordmark",
+      "localPath": "/assets/icons/footer-wordmark.svg",
+      "kind": "icon",
+      "mimeType": "image/svg+xml",
+      "bytes": 14866,
+      "sha256": "510e448818d5037a8d4c01edbb8317463496ded7477b001a85d5dee2b28cd524",
+      "dimensions": {
+        "width": 1366,
+        "height": 224
+      }
+    }
+  ]
+}

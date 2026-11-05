@@ -1,0 +1,230 @@
+.section {
+  position: relative;
+  z-index: 3;
+  margin-top: -28vh;
+  margin-top: -28dvh;
+  padding: 56px 40px 120px;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.heading,
+.timeline {
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 14.5px;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.heading > span,
+.number {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.heading h2 {
+  max-width: 400px;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.12;
+}
+
+.timeline {
+  position: relative;
+}
+
+.panel {
+  position: sticky;
+  top: 40px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 80px;
+}
+
+.panel:last-child {
+  position: relative;
+  top: auto;
+  margin-bottom: 0;
+}
+
+.panelInner {
+  --card-scale: 1;
+  display: flex;
+  width: 100%;
+  max-height: 100vh;
+  max-height: 100dvh;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 12px;
+  transform: scale(var(--card-scale));
+  transform-origin: 50%;
+  will-change: transform, opacity, filter;
+}
+
+.panelCopy {
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  align-self: stretch;
+  max-width: 480px;
+  margin: 0;
+  padding: 24px 40px;
+}
+
+.number {
+  display: block;
+}
+
+.panelCopy h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.panelCopy p {
+  max-width: 400px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.panelMedia {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  max-height: calc(100vh - 176px);
+  max-height: calc(100dvh - 176px);
+  flex: 0 1 auto;
+  overflow: hidden;
+  background: rgba(39, 26, 0, 0.08);
+  aspect-ratio: 16 / 9;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoFrame {
+  position: absolute;
+  z-index: 2;
+  inset: 5% 2.8125%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+@media (max-width: 960px) {
+  .section {
+    margin-top: 0;
+    padding: 48px 40px 120px;
+  }
+
+  .panel {
+    top: 104px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 40px 16px 120px;
+  }
+
+  .heading {
+    padding-bottom: 40px;
+  }
+
+  .heading h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    width: 100%;
+  }
+
+  .panelCopy {
+    padding: 24px 16px 20px;
+  }
+
+  .panelCopy h3 {
+    font-size: 24px;
+  }
+
+  .panelCopy p {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    margin-top: 0;
+  }
+
+  .panel {
+    position: relative;
+    top: auto;
+  }
+
+  .panelInner {
+    --card-scale: 1 !important;
+    max-height: none;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: scale(1) !important;
+    will-change: auto;
+  }
+
+  .panelMedia {
+    max-height: none;
+  }
+}
+
+.reducedMotion {
+  margin-top: 0;
+}
+
+.reducedMotion .panel {
+  position: relative;
+  top: auto;
+}
+
+.reducedMotion .panelInner {
+  --card-scale: 1 !important;
+  max-height: none;
+  opacity: 1 !important;
+  filter: none !important;
+  transform: scale(1) !important;
+  will-change: auto;
+}
+
+.reducedMotion .panelMedia {
+  max-height: none;
+}

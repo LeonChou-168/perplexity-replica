@@ -1,0 +1,33 @@
+{
+  "sourceUrl": "https://www.perplexity.ai/products/computer",
+  "retrievedAt": "2026-07-26T23:48:58+08:00",
+  "title": "Computer | Perplexity AI",
+  "headings": [
+    "Computer",
+    "Computer unifies",
+    "How it works",
+    "What Computer does for you",
+    "Put Computer to work"
+  ],
+  "workflowDescriptions": [
+    "Prompt in natural language. Computer deploys subagents to handle the rest.",
+    "Computer will browse, research, create, and connect your tools automatically and in the background.",
+    "Keep iterating and guiding Computer as it works. Or start Computer on a new task."
+  ],
+  "capabilityDescriptions": [
+    "Set recurring tasks that Computer executes autonomously and persistently over time.",
+    "Search the web, automate browser actions, extract data, and synthesize findings in a single workflow.",
+    "Connect Gmail, Slack, Notion, Calendar, and hundreds of other tools. Add personalized Skills to tailor how Computer works.",
+    "Create production ready apps, websites, reports, and more."
+  ],
+  "confirmedMediaUrls": [
+    "https://pplx-res.cloudinary.com/image/upload/t_w1600/v1771725540/pplx-web/Computer/images/computer-hero-bg-fallback-2.webp",
+    "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-01.webp",
+    "https://pplx-res.cloudinary.com/image/upload/t_w1600/pplx-web/Computer/images/step-01.webp",
+    "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-02.webp",
+    "https://pplx-res.cloudinary.com/image/upload/t_w1600/pplx-web/Computer/images/step-02.webp",
+    "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/step-bg-03.webp",
+    "https://pplx-res.cloudinary.com/image/upload/t_w1600/v1772015069/pplx-web/Computer/images/step-03.webp",
+    "https://res.cloudinary.com/pplx/image/upload/t_w1600/pplx-web/Computer/images/footer-background.webp"
+  ]
+}

@@ -1,0 +1,576 @@
+.hero {
+  position: relative;
+  height: 824px;
+  min-height: 680px;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.poster,
+.backgroundVideo {
+  position: absolute;
+  top: -83px;
+  left: calc(50% - 160px);
+  width: 1610px;
+  max-width: none;
+  height: 906px;
+  object-fit: cover;
+  transform: translateX(-50%);
+}
+
+.backgroundVideo {
+  z-index: 1;
+}
+
+.edgeMask {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(804px 120% at calc(50% - 160px) 40%, rgba(250, 248, 245, 0) 72%, var(--paper) 100%),
+    linear-gradient(90deg, var(--paper) 0%, rgba(250, 248, 245, 0) 12%),
+    linear-gradient(270deg, rgba(250, 248, 245, 0) 80%, var(--paper) 100%),
+    linear-gradient(var(--paper) 0%, rgba(250, 248, 245, 0) 16% 64%, rgba(250, 248, 245, 0.92) 92%, var(--paper) 100%);
+}
+
+.headlineWrap {
+  position: absolute;
+  z-index: 4;
+  top: 280px;
+  right: 288px;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.product,
+.verb {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.product {
+  animation: heroFocus 2.2s both;
+}
+
+.verbViewport {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-width: 14ch;
+  height: 96px;
+  overflow: hidden;
+}
+
+.verb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.verbActive {
+  opacity: 1;
+  filter: none;
+  transform: translateY(0);
+}
+
+.verbCurrent {
+  animation: verbEnter 600ms cubic-bezier(0.45, 0, 0.55, 1) both;
+}
+
+.verbPrevious {
+  animation: verbExit 600ms cubic-bezier(0.45, 0, 0.55, 1) both;
+}
+
+.cta {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 24px;
+  padding: 0 24px;
+  color: var(--paper);
+  background: var(--button);
+  border-radius: 40px;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.queryViewport {
+  position: absolute;
+  z-index: 5;
+  top: 168px;
+  left: 40px;
+  width: 240px;
+  height: 528px;
+  overflow: hidden;
+}
+
+.queryDesktopStack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.queryMobileTrack {
+  display: none;
+}
+
+.queryCard {
+  position: relative;
+  flex: 0 0 160px;
+  width: 240px;
+  height: 160px;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid rgba(39, 26, 0, 0.1);
+  border-radius: 4px;
+}
+
+.queryCard::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  pointer-events: none;
+  transform: translateZ(0);
+  backdrop-filter: blur(20px);
+}
+
+.queryCardInner {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 12px;
+  transition: opacity 320ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.queryCardLeaving {
+  opacity: 0;
+}
+
+.queryCardEntering {
+  animation: queryCardEnter 1000ms cubic-bezier(0.12, 1, 0.72, 1) both;
+}
+
+.queryNumber,
+.queryCommand,
+.statusLabel,
+.statusBits,
+.audioToggle,
+.audioWave {
+  font-family: var(--font-mono);
+}
+
+.queryNumber,
+.queryCommand {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.queryBody {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.queryBody p {
+  display: -webkit-box;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.queryCommand {
+  align-self: flex-end;
+}
+
+.status,
+.audio {
+  position: fixed;
+  z-index: 100;
+  bottom: 40px;
+  pointer-events: none;
+}
+
+.status {
+  left: 40px;
+}
+
+.audio {
+  right: 40px;
+}
+
+.statusIndicator,
+.audioIndicator {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 4px 6px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.6);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: translateZ(0);
+  transition: color 200ms ease, background-color 320ms ease;
+  backdrop-filter: blur(20px);
+}
+
+.audioIndicator {
+  padding: 4px;
+}
+
+.chromeDark .statusIndicator,
+.chromeDark .audioIndicator {
+  color: var(--paper);
+  background: rgba(39, 26, 0, 0.12);
+}
+
+.statusLabel,
+.audioToggle {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.statusBits,
+.audioWave {
+  width: 240px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.statusBitsActive {
+  animation: statusPulse 600ms cubic-bezier(0.36, 0, 0.62, 1) infinite;
+}
+
+.statusDots span {
+  animation: statusDot 400ms ease-in-out infinite;
+}
+
+.statusDots span:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.statusDots span:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.audioWave {
+  width: auto;
+  letter-spacing: 1px;
+}
+
+.audioWaveActive {
+  animation: audioWave 780ms steps(4, end) infinite;
+}
+
+.audioTextActive,
+.audioSeparator {
+  color: currentColor;
+}
+
+.audioTextMuted {
+  color: rgba(39, 37, 30, 0.6);
+}
+
+.chromeDark .audioTextMuted {
+  color: rgba(250, 248, 245, 0.6);
+}
+
+@keyframes heroFocus {
+  from { opacity: 0; filter: blur(12px); transform: scale(1.04); }
+  to { opacity: 1; filter: none; transform: scale(1); }
+}
+
+@keyframes verbEnter {
+  from { opacity: 0; filter: blur(12px); transform: translateY(40%); }
+  to { opacity: 1; filter: none; transform: translateY(0); }
+}
+
+@keyframes verbExit {
+  from { opacity: 1; filter: none; transform: translateY(0); }
+  to { opacity: 0; filter: blur(12px); transform: translateY(-40%); }
+}
+
+@keyframes queryCardEnter {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes queryMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - var(--marquee-offset, 12px))); }
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes statusDot {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes audioWave {
+  0%, 100% { transform: scaleY(0.72); }
+  50% { transform: scaleY(1); }
+}
+
+@media (max-width: 1280px) and (min-width: 961px) {
+  .headlineWrap {
+    top: 280px;
+    right: auto;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    padding-top: 72px;
+    text-align: center;
+    transform: translateY(-20%);
+  }
+
+  .product,
+  .verb {
+    font-size: 72px;
+  }
+
+  .verbViewport {
+    min-width: 14ch;
+    height: 72px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .poster,
+  .backgroundVideo {
+    left: 50%;
+  }
+
+  .edgeMask {
+    background:
+      radial-gradient(804px 120% at 50% 40%, rgba(250, 248, 245, 0) 72%, var(--paper) 100%),
+      linear-gradient(90deg, var(--paper) 0%, rgba(250, 248, 245, 0) 12%),
+      linear-gradient(270deg, rgba(250, 248, 245, 0) 80%, var(--paper) 100%),
+      linear-gradient(var(--paper) 0%, rgba(250, 248, 245, 0) 16% 64%, rgba(250, 248, 245, 0.92) 92%, var(--paper) 100%);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero {
+    height: 796px;
+    min-height: 796px;
+    overflow: hidden;
+  }
+
+  .poster,
+  .backgroundVideo {
+    top: -83px;
+    width: 1610px;
+    height: 906px;
+  }
+
+  .edgeMask {
+    background:
+      radial-gradient(804px 120% at 50% 40%, rgba(250, 248, 245, 0) 72%, var(--paper) 100%),
+      linear-gradient(var(--paper) 0%, rgba(250, 248, 245, 0) 16% 64%, rgba(250, 248, 245, 0.92) 92%, var(--paper) 100%);
+  }
+
+  .headlineWrap {
+    top: 256px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product,
+  .verb {
+    font-size: 72px;
+  }
+
+  .verbViewport {
+    width: 100%;
+    min-width: 0;
+    height: 72px;
+  }
+
+  .cta {
+    display: inline-flex;
+  }
+
+  .queryViewport {
+    top: 576px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 160px;
+  }
+
+  .queryDesktopStack {
+    display: none;
+  }
+
+  .queryMobileTrack {
+    display: flex;
+    width: max-content;
+    height: 144px;
+    flex-direction: row;
+    gap: 24px;
+    animation: queryMarquee 60s linear infinite;
+    will-change: transform;
+  }
+
+  .queryMobileTrack:hover {
+    animation-play-state: paused;
+  }
+
+  .queryCard {
+    flex-basis: 208px;
+    width: 208px;
+    height: 144px;
+  }
+
+  .status {
+    left: 32px;
+  }
+
+  .audio {
+    right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 528px;
+    min-height: 528px;
+  }
+
+  .poster,
+  .backgroundVideo {
+    top: -24px;
+    left: 50%;
+    width: 1200px;
+    height: 675px;
+  }
+
+  .edgeMask {
+    background:
+      linear-gradient(180deg, var(--paper) 0%, var(--paper) 12%, rgba(250, 248, 245, 0) 28%),
+      linear-gradient(0deg, var(--paper) 0%, var(--paper) 0%, rgba(250, 248, 245, 0) 20%);
+  }
+
+  .headlineWrap {
+    top: 88px;
+  }
+
+  .product,
+  .verb {
+    font-size: 48px;
+  }
+
+  .verbViewport {
+    height: 48px;
+  }
+
+  .cta {
+    margin-top: 24px;
+  }
+
+  .queryViewport {
+    top: 424px;
+    height: 104px;
+  }
+
+  .queryMobileTrack {
+    --marquee-offset: 8px;
+    height: 160px;
+    gap: 16px;
+  }
+
+  .queryCard {
+    flex-basis: 180px;
+    width: 180px;
+    height: 160px;
+  }
+
+  .status,
+  .audio {
+    bottom: 16px;
+  }
+
+  .status {
+    left: 16px;
+  }
+
+  .audio {
+    right: 16px;
+  }
+
+  .statusIndicator,
+  .statusBits {
+    width: 160px;
+    max-width: 160px;
+  }
+}
+
+.deterministic .product,
+.deterministic .verb,
+.deterministic .queryMobileTrack,
+.deterministic .queryCardInner,
+.deterministic .statusBits,
+.deterministic .statusDots span,
+.deterministic .audioWave,
+:global(html[data-motion="reduced"]) .product,
+:global(html[data-motion="reduced"]) .verb,
+:global(html[data-motion="reduced"]) .queryMobileTrack,
+:global(html[data-motion="reduced"]) .queryCardInner,
+:global(html[data-motion="reduced"]) .statusBits,
+:global(html[data-motion="reduced"]) .statusDots span,
+:global(html[data-motion="reduced"]) .audioWave {
+  opacity: 1;
+  filter: none;
+  animation: none;
+  transform: none;
+}
