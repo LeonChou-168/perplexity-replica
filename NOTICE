@@ -1,0 +1,29 @@
+NOTICE
+======
+
+perplexity-replica is an unofficial, non-commercial local visual replica of the
+Perplexity Computer product page. It is not affiliated with, endorsed by, or
+sponsored by Perplexity AI.
+
+License scope
+-------------
+
+The MIT License in LICENSE applies only to the original source code authored in
+this repository (the Vite + React + TypeScript application and its tests).
+
+Official assets and third-party material
+----------------------------------------
+
+All media and captured reference material under `public/assets/` and
+`reference/` — including, without limitation, images, audio, video, fonts,
+icons, wordmarks, the official stylesheet, snapshot JSON, and text probes — are
+the property of Perplexity AI or their respective owners and are NOT covered by
+the MIT License.
+
+These assets are kept only for local, non-commercial study and visual
+evaluation. They must not be redistributed, published, sublicensed, or used
+commercially. Anyone reusing this repository is responsible for removing or
+replacing them.
+
+Perplexity, the Perplexity name and logo, and related marks are trademarks of
+Perplexity AI. All rights remain with their respective owners.
