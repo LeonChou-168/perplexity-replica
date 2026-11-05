@@ -9,3 +9,11 @@ vitest.config.d.ts
 playwright.config.js
 playwright.config.d.ts
 
+# macOS metadata
+.DS_Store
+
+# Official Perplexity AI reference captures (local-only; not redistributed)
+reference/official/*.css
+reference/official/**/snapshot.json
+reference/official/**/public-text-probe.json
+

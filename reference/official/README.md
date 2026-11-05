@@ -3,6 +3,10 @@
 This directory contains source material used only to compare the local replica
 with the public Perplexity Computer page. Nothing here is loaded at runtime.
 
+The raw official CSS and probe JSON captures referenced below are intentionally
+untracked (see `.gitignore` and the repository `NOTICE`). They remain only in
+local working copies for visual comparison and must not be redistributed.
+
 The immutable `computer-2026-07-26T23-48-58+08-00/` probe confirms the current
 public copy and primary asset URLs. Its status remains `partial`: direct HTML,
 HAR, clean-browser DOM, computed-style, and screenshot capture were blocked, so
